@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couples Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Couples Connection</h1>
+        <div id="loveCalculator">
+            <h2>Love Calculator</h2>
+            <form id="love-form">
+                <input type="text" id="name1" placeholder="Your name" required>
+                <input type="text" id="name2" placeholder="Partner's name" required>
+                <button type="submit">Calculate Love</button>
+            </form>
+            <p id="love-percentage"></p>
+        </div>
+
+        <div id="videoCallSection">
+            <h2>Video Call</h2>
+            <button id="startVideoCall">Start Video Call</button>
+            <div id="videoChatContainer"></div>
+        </div>
+
+        <div id="voiceChangeSection">
+            <h2>Voice Change</h2>
+            <button id="changeVoice">Change Voice</button>
+        </div>
+
+        <div id="chatSection">
+            <h2>Chat</h2>
+            <textarea id="chatInput" placeholder="Type a message"></textarea>
+            <button id="sendMessage">Send</button>
+            <div id="chatMessages"></div>
+        </div>
+
+        <div id="mediaSection">
+            <h2>Send Photos/Videos</h2>
+            <input type="file" id="mediaInput" accept="image/*,video/*">
+            <button id="sendMedia">Send Media</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
